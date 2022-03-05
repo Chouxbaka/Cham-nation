@@ -1,0 +1,401 @@
+/* ------- CSS THREAD ------- */
+
+
+.inside-center {
+    width: auto;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 8px 24px #7090B0B3;
+    padding: 20px;
+    margin: 50px;
+}
+
+#add-thread {
+    display: none;
+}
+
+.add-thread-auth {
+    display: block !important;
+}
+
+#add-thread #input-add-thread {
+    border-width: 0 0 2px;
+    background: white;
+    width: 50%;
+}
+
+#buttonEdit {
+    border: none;
+    float: right;
+    background-image: linear-gradient( #fde8f7 0%, #d5e3fb 100%);
+    margin: 5px;
+    padding: 5px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+#buttonDelete {
+    border: none;
+    float: right;
+    background-image: linear-gradient( #fde8f7 0%, #d5e3fb 100%);
+    margin: 5px;
+    padding: 5px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#ButtonCategory input {
+    cursor: pointer;
+}
+#add-thread #input-add-thread:focus {
+    outline:  none;
+}
+
+#add-thread #button-input-add-thread {
+    border: none;
+    background: #593C8F;
+    color: white;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    /* text-align: right; */
+    float: right;
+    margin-top: 0px;
+    height: auto;
+    cursor: pointer;
+    width: 40px;
+    height: 30px;
+}
+
+
+/* ------- CSS GLOBAL POP UP ------- */
+
+
+.popUp {
+    display: block !important;
+}
+
+.option_div {
+    display: flex; 
+}
+
+.check_box {
+    color: rgb(107, 107, 107)
+}
+
+.box {
+    width: 300px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-image: linear-gradient( #fde8f7 0%, #d5e3fb 100%);
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0px 8px 24px #7090B0B3;
+    display: none;
+}
+
+.box h1 {
+    color: rgb(107, 107, 107);
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.box input[type = "text"],.box input[type = "password"], .box input[type="email"] {
+    border:0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #f8d5ee;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: rgb(107, 107, 107);
+    border-radius: 24px;
+    transition: 0.25s;
+}
+
+.box input[type = "text"]:focus,.box input[type = "password"]:focus, .box input[type="email"]:focus {
+    width: 280px;
+    border-color: rgb(138, 197, 224)
+}
+
+.box input[type = "submit"],.box input[type = "reset"]{
+    background: none;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #f8d5ee;
+    padding: 14px 40px;
+    color: rgb(107, 107, 107);
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+    font-size: large;
+}
+
+.box input[type = "submit"]:hover, .box input[type = "reset"]:hover {
+    background: rgb(138, 197, 224)
+}
+
+/* ------- CSS CONNEXION POP UP ------- */
+
+
+.sign_up {
+    color: rgb(107, 107, 107)
+}
+
+.forget a {
+    color:rgb(138, 197, 224);
+}
+
+#sInscrire {
+    color:rgb(138, 197, 224);
+}
+
+form a {
+    text-decoration: none;
+}
+
+form a:hover {
+    text-decoration: underline;
+}
+
+#sInscrire:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.connexion-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(32, 32, 32, 0.568);
+}
+
+
+/* ------- CSS ADD THREAD POP UP ------- */
+
+ul{
+    list-style: none;
+    display:list-item;
+    text-align: left;
+    display: grid;
+    grid-column: 3;
+    grid-row: 1;
+    align-self: flex-start;
+    justify-content: space-around;
+    line-height: 50px;
+}
+
+
+
+.threadGrid {
+    display: grid !important;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 33% 33% 33%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(32, 32, 32, 0.568);
+}
+
+#thread-background {
+    display: none;
+    width: 80%;
+    height: 80%;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-image: linear-gradient( #fde8f7 0%, #d5e3fb 100%);
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0px 8px 24px #7090B0B3;
+}
+#thread-edit {
+    display: none;
+    width: 80%;
+    height: 80%;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-image: linear-gradient( #fde8f7 0%, #d5e3fb 100%);
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0px 8px 24px #7090B0B3;
+}
+
+#namethread {
+    display: grid;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+#namethread {
+    border-width: 0 0 2px;
+    background: none;
+    width: 100%;
+    font-size: xx-large;
+    border-bottom: 2px solid rgb(121, 121, 121);
+}
+#namethreadedit {
+    display: grid;
+    grid-column: 1;
+    grid-row: 1;
+}
+#namethreadedit {
+    border-width: 0 0 2px;
+    background: none;
+    width: 100%;
+    font-size: xx-large;
+    border-bottom: 2px solid rgb(121, 121, 121);
+}
+
+#namethread:focus {
+    outline:  none;
+}
+#namethreadedit:focus {
+    outline:  none;
+}
+
+#thread-background textarea{
+    resize: none;
+    border-style: dotted;
+    border-width: 5px;
+    border-color: pink;
+}
+#thread-edit textarea{
+    resize: none;
+    border-style: dotted;
+    border-width: 5px;
+    border-color: pink;
+}
+#thread-delete textarea{
+    resize: none;
+    border-style: dotted;
+    border-width: 5px;
+    border-color: pink;
+}
+#créa_thread {
+    display: grid;
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+    width: 80%;
+    height: 200%;
+}
+
+#modif_thread {
+    display: grid;
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+    width: 80%;
+    height: 200%;
+}
+
+#thread-background #ajouter-thread{
+    padding : 60px;
+    float: left;
+    padding-top: 10px;
+    text-decoration: underline;
+    font-size: 30px;
+    font-style: italic;
+}
+
+#thread-background #modifier-thread{
+    padding : 60px;
+    float: left;
+    padding-top: 10px;
+    text-decoration: underline;
+    font-size: 30px;
+    font-style: italic;
+}
+
+.sub-thread {
+    display: grid;
+    grid-column: 3;
+    grid-row: 3;
+    align-self: flex-end;
+}
+
+.boxthread input[type = "submit"], .boxthread input[type = "reset"]{
+    width: 300px;
+    height: 100px;
+    background: none;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #ff89de;
+    padding: 14px 40px;
+    color: rgb(107, 107, 107);
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+    font-size: large;
+}
+
+.boxthread input[type = "submit"]:hover, .boxthread input[type = "reset"]:hover {
+    background: rgb(255, 215, 170)
+}
+
+#confirmDeleteBtn {
+    background: none;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #f8d5ee;
+    padding: 14px 40px;
+    color: rgb(107, 107, 107);
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+    font-size: large;
+}
+
+#confirmDeleteBtn:hover {
+    background: rgb(138, 197, 224)
+}
+
+
+/*--------- */
+
+.threadGridDelete {
+    display: grid !important;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 33% 33% 33%;
+    position: absolute;
+}
+
+
+/* ------- LIKES AND DISLIKES ------- */
+.btn-like .btn-dislike{
+    cursor: pointer;
+    outline: 0;
+    color: #AAA;
+}
+
+.btnGreen{
+    color: green;
+}
+
+.btnRed{
+    color: red;
+}
+
+.like-counter {
+    color: #000;
+    text-decoration: none;
+    margin-right: 5px;
+}
+
+.liked {
+    font-weight: bold;
+}

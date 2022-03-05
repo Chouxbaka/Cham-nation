@@ -1,0 +1,175 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+/* ------- CSS ALL ------- */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(143, 143, 143, 0) rgba(255, 255, 255, 0);
+    font-family: sans-serif;
+}
+
+body {
+    overflow: hidden;
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    background-image: linear-gradient(to top, #fc7cd7 0%, #a6c1ee 100%);
+}
+
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+input {
+    font-size: medium;
+}
+
+header {
+    position: static;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: 1fr;
+    background: #ffffff7a;
+}
+
+header #logo {
+    grid-row: 1;
+    grid-column: 1;
+    float: left;
+    height: 90px;
+    padding-top: 10px;
+}
+
+header #wrap{
+    width: 30%;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+header #search {
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+
+header #searchTerm {
+    grid-row: 1;
+    grid-column: 5;
+    width: 100%;
+    border: 3px solid #ceb3fa;
+    border-right: none;
+    padding: 5px;
+    height: 20px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #9DBFAF;
+}
+
+header #searchTerm:focus{
+    color: #ceb3fa;
+}
+
+header #searchButton {
+    width: 40px;
+    border: 1px solid #ceb3fa;
+    background: #ceb3fa;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+
+header #profile-picture {
+    height: 100px;
+    grid-row: 1;
+    grid-column: 10;
+    cursor: pointer;
+}
+/* ------- CSS GLOBAL DESIGN GRID ------- */
+
+
+#global{
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: 100%;
+    height: calc(100vh);
+    }
+
+#global #global-left {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+#global #global-center {
+    grid-column: 2;
+    grid-row: 1;
+    border-left: solid 1px grey;
+    border-right: solid 1px grey;
+    overflow-y: scroll;
+    padding-bottom: 75px;
+}
+
+#global #global-right {
+    text-align: center;
+    grid-column: 3;
+    grid-row: 1;
+}
+
+
+/* ------- Partie gauche ------- */
+
+
+.item-left {
+    width: 80%;
+    background-color: rgba(238, 238, 238, 0.411);
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto; 
+    padding: 5px;
+    margin: 10px;
+    box-shadow: 0px 8px 24px #7090B0B3;
+    text-align: center;
+}
+.item-left #home {      
+    width : 20px;
+}
+
+#category {
+    width: 80%;
+    height: 50%;
+    margin: 10px;
+    padding: 5px;
+    background-color: rgba(238, 238, 238, 0.411);
+    border-radius: 20px;
+    text-align:center;
+    box-shadow: 0px 8px 24px #7090B0B3;
+    display: grid;
+    justify-content:space-evenly;
+}
+
+#category input {
+    border: none;
+    float: right;
+    background-image: linear-gradient( #fde8f7 0%, #d5e3fb 100%);
+    margin: 5px;
+    padding: 5px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+/* ------- Partie droite ------- */
+
+
+div #profile-picture {
+    margin-top: 50px;
+    height: 100px;
+    grid-row: 1;
+    grid-column: 10;
+    align-items: center;
+}

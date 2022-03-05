@@ -1,0 +1,30 @@
+PRAGMA foreign_keys = ON;
+
+CREATE TABLE IF NOT EXISTS User(
+    id_user INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
+    user_name TEXT NOT NULL UNIQUE,
+    password TEXT NOT NULL,
+    email TEXT NOT NULL UNIQUE
+);
+
+CREATE TABLE IF NOT EXISTS Thread(
+    id_th INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
+    id_user INTEGER NOT NULL,
+    title TEXT NOT NULL,
+    content TEXT NOT NULL,
+    created_at TEXT NOT NULL,
+    category TEXT NOT NULL,
+
+FOREIGN KEY(id_user) REFERENCES User(id_user)
+);
+
+
+
+CREATE TABLE IF NOT EXISTS Like(
+
+    id_user INTEGER NOT NULL,
+    id_th INT NOT NULL,
+    value INT NOT NULL,
+
+    FOREIGN KEY(id_th) REFERENCES Thread(id_th)
+);
