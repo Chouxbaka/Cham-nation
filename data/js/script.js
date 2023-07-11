@@ -1,8 +1,8 @@
 document.querySelector("#submitthread").addEventListener('click', () => {
     let title = document.getElementById("input-add-thread").value
     let content = document.getElementById("créa_thread").value
-    var radios = document.getElementsByName('drone');
-    for (var i = 0, length = radios.length; i < length; i++) {
+    let radios = document.getElementsByName('drone');
+    for (let i = 0, length = radios.length; i < length; i++) {
         if (radios[i].checked) {
             category = radios[i].value
             break
