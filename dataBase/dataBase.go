@@ -86,7 +86,7 @@ func SingleRowQuerry(db *sql.DB, rowName string, tableName string, comparator1 s
 	}
 
 	//execute the queryRow request
-	let toReturn string
+	var toReturn string
 	err = stmt.QueryRow(comparator2).Scan(&toReturn)
 	if err != nil {
 		return "notExist"
@@ -121,7 +121,7 @@ func SingleRowQuerryLike(db *sql.DB, comparator1 string, comparator2 int, compar
 	}
 
 	//execute the queryRow request
-	let toReturn string
+	var toReturn string
 	err = stmt.QueryRow(comparator2, comparator4).Scan(&toReturn)
 	if err != nil {
 		return "notExist"
